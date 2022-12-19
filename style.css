@@ -1,0 +1,875 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #af69cd;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #af69cd;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Questrial", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Solway", serif;
+}
+
+.Imgs {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.Todos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+}
+
+.Menu svg {
+  width: 40%;
+  height: 50%;
+  fill: aliceblue;
+}
+
+.center {
+
+  background-color: #7600ab;
+}
+
+.Nav p {
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.Nav .Close {
+  width: 10%;
+}
+
+.View {
+  transform: translateX(0);
+}
+
+/*-----------------------------------*/
+
+.Primero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  scroll-margin-top: 6.25rem;
+}
+
+/*------------------
+
+-----------
+-------------------
+-----------
+----------------------------*/
+.Segundo {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(255, 255, 255);
+}
+.acostados {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.listo {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.Me {
+  font-size: 2.4rem;
+  color: #7600ab;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Fira Sans", sans-serif;
+}
+
+
+
+.Habilidades {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.BoxConten {
+  width: 100%;
+  height: 100%;
+}
+
+.half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.half a {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #af69cd;
+  font-weight: 600;
+  color: #af69cd;
+}
+
+.about-content {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.half a:hover {
+  background-color: #7600ab;
+  color: #fff;
+  cursor: pointer;
+}
+/* 
+
+
+/*-----------------------
+-----------------------
+------------------------------------
+----------------------------------------
+-------------------------------------------------
+----------*/
+
+.Tercero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+  background-color: #111111;
+}
+
+.Proyecto {
+  width: 97%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4px;
+}
+
+.Box2 {
+  width: 100%;
+  height: 11rem;
+  /* margin: 0.5rem; */
+  background-color: #2647c1;
+}
+
+/*-------------------------------------------
+------------------------------------------------------
+---------------------------------------------------------------
+--------------------------------------------------------------------------
+-------------------------------------------*/
+.Cuarto {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.Quinto {
+  width: 100%;
+  background-color: #111111;
+}
+
+.none {
+  display: none;
+}
+
+.about-img {
+  width: 20rem;
+}
+
+.header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+  background-color: rgba(65, 65, 65, 0.714);
+}
+
+.header a {
+  font-size: 1.1rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Questrial", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Solway", serif;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 5rem;
+  background-color: #00000071;
+  transform: translateY(-120%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-nav a:hover {
+  color: #af69cd;
+}
+
+.visible {
+  transform: translateY(0);
+}
+
+.TheMenu {
+  width: 4rem;
+  height: 80%;
+}
+
+.TheMenu img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.w-6 {
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+  font-size: 2rem;
+}
+.h-6 {
+  font-size: 2rem;
+}
+
+.center a {
+  text-decoration: none;
+  color: #ffffff;
+
+
+}
+
+.center a:hover {
+  text-decoration: none;
+  color: #af69cd;
+}
+
+.Primero {
+  background-image: url(./Fotos/Prueba1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Data {
+  width: 100%;
+  height: calc(100% - 5rem);
+  margin-top: 5rem;
+  background-color: rgba(65, 65, 65, 0.714);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MoreData {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  margin-top: -7rem;
+}
+
+.MoreData figure {
+  width: 10rem;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MoreData figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.MoreData h3 {
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Questrial", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Solway", serif;
+}
+
+.MoreData h5 {
+  font-size: 1.3rem;
+  color: #fff;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Questrial", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Solway", serif;
+}
+
+.MoreData h1 {
+  font-size: 3rem;
+}
+
+span {
+  color: #af69cd;
+}
+
+.MoreData .Conta {
+  padding: 0.7rem;
+  color: #fff;
+  border: 2px solid #af69cd;
+  border-radius: 20px;
+  /* background-color: #af69cd; */
+  cursor: pointer;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Questrial", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Solway", serif;
+}
+
+.Redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2rem;
+}
+
+.MoreData .Conta:hover {
+  background-color: #af69cd;
+}
+
+.R1 {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ad7ec3;
+  border-radius: 50%;
+  margin: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Redes img {
+  width: 20px;
+}
+
+/*----------egundo------------------------*/
+
+.BoxConten {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Cont2 {
+  width: 50%;
+  height: 90%;
+  color: rgb(14, 14, 14);
+}
+
+.Cont2 p {
+  width: 70%;
+  height: 70%;
+  padding-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+.ELA {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Cont2 a {
+  padding: 0.7rem;
+  color: #af69cd;
+  border: 2px solid #af69cd;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.Cont2 a:hover {
+  background-color: #af69cd;
+  color: #fff;
+}
+
+.Box2 img {
+  width: 60%;
+  height: 100%;
+}
+
+/*--------------------------------*/
+
+
+
+.Skill {
+  max-width: 40rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: .8rem;
+  align-self: flex-start;
+  grid-row-gap: 0.8rem;
+}
+
+.ConteSkil {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.ocostados {
+  display: flex;
+  flex-direction: column;
+}
+
+.TSkill {
+  width: 80%;
+  color: #fff;
+  display: flex;
+  max-width: 35rem;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.TSkill p {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+/*-----------Cuatro---------------------------*/
+
+
+.ochenta {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Cuarto h2 {
+  text-align: left;
+
+  margin-bottom: 1rem;
+  color: #af69cd;
+}
+
+.a-ver {
+  color: #fff;
+}
+
+.Ah2 {
+  margin-bottom: 1rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+}
+
+.Proyectos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+}
+
+.Box3 figure {
+  width: 100%;
+  height: 60%;
+  margin-top: auto;
+  margin-right: auto;
+}
+
+.Box3 img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*-------------Quinto---------------------------*/
+
+.Quinto {
+  background-color: #000000;
+  padding-top: 1rem;
+}
+
+.contact-title {
+  margin-bottom: 1rem;
+  color: #af69cd;
+  font-size: 2.4rem;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.ElQuinto {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ElQuinto h4{
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+}
+
+.Box4 figure {
+  width: 20%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Box4 figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Box4 .input {
+  width: 75%;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 10px;
+  padding-left: 40px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.Box4 .input::placeholder {
+  color: #fff;
+}
+
+.Box4 .text-area {
+  width: 60%;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 10px;
+  padding-left: 40px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  resize: none;
+}
+
+.Box4 textarea::placeholder {
+  color: #fff;
+}
+
+.Box4 .submit {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: #af69cd;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.BX {
+  margin-bottom: 4rem;
+}
+
+.BX h4 {
+  font-size: 1.3rem;
+  color: #fff;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Crimson Text", serif;
+}
+
+.BX p {
+  padding: 20px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.astro {
+  width: 90%;
+  height: 25rem;
+  display: none;
+  
+}
+
+.astro img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.MoreBox {
+  display: flex;
+  position: relative;
+  margin-top: -0.1rem;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.Box5 img {
+  width: 80%;
+  height: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    transform: translateY(0);
+    background-color: transparent;
+  }
+
+  .main-nav--link {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    padding: 20px 0;
+    margin: 0 20px;
+  }
+  .main-nav--link:hover {
+    padding: 6px 0;
+  }
+  .close {
+    display: none;
+  }
+
+  .about-img {
+    width: 24rem;
+  }
+
+
+  .ConteSkil {
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ocostados {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .TSkill {
+    margin-right: 2rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .astro img {
+    display: flex;
+   }
+
+}
+
+@media screen and (min-width: 998px) {
+  .MoreData {
+    width: 50%;
+  }
+
+  .Segundo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .Tercero {
+    align-items: center;
+    justify-content: center;
+
+  }
+  .me-h {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+  .ConteSkil {
+    padding: 0;
+  }
+  .TSkill {
+    width: 50%;
+  }
+
+  .half {
+    width: 50%;
+  }
+  .container-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-img {
+    width: 27rem;
+  }
+
+  .astro {
+    width: 90%;
+    height: 25rem;
+    display: flex;
+    
+  }
+  
+  .astro img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .Cuarto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+}
+
+/* @media screen and(min-width:1280px) {
+  .about-img {
+    width: 50rem;
+  }
+} */

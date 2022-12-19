@@ -1,0 +1,320 @@
+.Box {
+  width: 80%;
+  height: 30rem;
+  border-radius: 15px;
+  transition: transform 500ms ease-out;
+  overflow: hidden;
+  color: #ccc;
+  padding: 1%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 0.1rem;
+}
+
+.Box::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: -125%;
+  transform: skew(45deg);
+  position: absolute;
+  animation-direction: left;
+  transition-duration: 500ms;
+}
+
+/* .Box:hover {
+  transform: translateY(-5%);
+} */
+
+.Box:hover::before {
+  left: 150%;
+}
+
+/*----------------------------------*/
+
+.Box2 {
+  width: 100%;
+  height: 5rem;
+  border-radius: 15px;
+  transition: transform 500ms ease-out;
+  overflow: hidden;
+  color: #ccc;
+  padding: 5%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+
+  /* margin: 0.7rem; */
+}
+
+.Box2::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: -125%;
+  transform: skew(45deg);
+  position: absolute;
+  animation-direction: left;
+  transition-duration: 500ms;
+}
+
+.Box2:hover {
+  transform: translateY(-5%);
+}
+
+.Box2:hover::before {
+  left: 150%;
+}
+/*------------------------------------*/
+
+.Box3 {
+  width: 90%;
+  height: 10rem;
+  border-radius: 15px;
+  transition: transform 500ms ease-out;
+  overflow: hidden;
+  color: #ccc;
+  /* padding: 2%; */
+  text-align: center;
+  background: rgba(120, 120, 120, 0.2);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  /* border: 2px solid #af69cd; */
+  margin: 0.7rem;
+}
+
+.Box3::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: -125%;
+  transform: skew(45deg);
+  position: absolute;
+  animation-direction: left;
+  transition-duration: 500ms;
+}
+
+.Box3:hover {
+  transform: translateY(-5%);
+}
+
+.Box3:hover::before {
+  left: 150%;
+}
+
+/*---------------------------------------*/
+
+.Box4 {
+ /*  width: 20rem; */
+  min-width: 15rem;
+  max-width: 25rem;
+  min-height: 30rem;
+  border-radius: 15px;
+  transition: transform 500ms ease-out;
+  overflow: hidden;
+  color: #ccc;
+
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.Box4::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: -125%;
+  transform: skew(45deg);
+  position: absolute;
+  animation-direction: left;
+  transition-duration: 500ms;
+}
+
+/* .Box4:hover {
+  transform: translateY(-5%);
+} */
+
+.Box4:hover::before {
+  left: 150%;
+}
+
+/*-------------------------------------*/
+
+.Box5 {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 15px;
+  transition: transform 500ms ease-out;
+  overflow: hidden;
+  color: #ccc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+ /*  border: 2px solid rgba(255, 255, 255, 0.1); */
+  margin: 0.7rem;
+}
+
+.Box5::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: -125%;
+  transform: skew(45deg);
+  position: absolute;
+  animation-direction: left;
+  transition-duration: 500ms;
+}
+
+/* .Box5:hover {
+    transform: translateY(-5%);
+  } */
+
+.Box5:hover::before {
+  left: 150%;
+}
+
+/*---------Tarjetas---------------------------*/
+.Card {
+  position: relative;
+  width: 90%;
+  height: 9rem;
+}
+
+.Card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.Card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.Card figure {
+  width: 100%;
+  height: 100%;
+}
+
+.Card .front img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+}
+
+/* .Card .front h3 {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+} */
+
+.tegnologias {
+  width: 80%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content{
+  line-height: 1.8rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.tegnologias figure {
+  width: 2rem;
+}
+
+.tegnologias svg {
+  color: aqua;
+}
+
+.Card div {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.Card .back svg {
+  width: 2rem;
+  height: 1.5rem;
+  color: black;
+}
+
+.Card .back h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Cinzel", serif;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.Card .back p {
+  color: #fff;
+}
+
+.Card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.Card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.git {
+  width: 23px;
+  color: #000;
+}
+
+.Construc {
+  width: 80%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Construc .Timg {
+  width: 15%;
+  height: 100%;
+}
+
+.Construc .Timg img {
+  width: 100%;
+  height: 100%;
+}
